@@ -5,41 +5,38 @@
 }
 /* ------------------------------------------------------ banniere (premiere partie) -------------------------------------------------------  */
 .tete{
-    height: 880px;
-    width: 100%;
+    min-height: 800px;
     background-image: url(/image/banner_bg.png);
     background-repeat: no-repeat;
     background-size: 68%;
     background-position: top right;
-    border: solid 1px #ffffff;
+    margin-bottom: 15%;
 }
 .beforeContain{
-    height: 800px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
+    height: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 200px;
 }
 .imageDescription{
-    height: 100%;
-    width: 45%;
+    height: 610px;
+    width: 570px;
 }
 .imageDescription img{
-    height: 75%;
-    width: 100%;
+    height: 610px;
+    width: 570px;
     font-size: 550px;
 }
 .textContain{
     margin-top: 110px;
-    height: 50%;
-    width: 45%;
+    height: 65%;
+    width: 550px;
 }
-.secondText,.awasome h1{
-    font-size: 27px;
+.secondText h1,.awasome h1{
+    font-size: 55px;
     text-transform: capitalize;
     font-weight: 780;
+    line-height: 1.18;
     margin-bottom: 27px;
     color: #0c2e60;
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
@@ -87,18 +84,107 @@
     border: none !important;
     background-position: right center;
 }
+/* --------------------------------------banniere responsive-------------------------------------------------------- */
+
+@media(max-width:1200px){
+    .tete{
+        background-color: #f7f7f7;
+        background-image: none;
+    }
+    .imageDescription{
+        height: 410px;
+        width: 450px;
+    }
+    .imageDescription img{
+        height: 410px;
+        width: 450px;
+        font-size: 500px;
+    }
+    .textContain{
+        margin-top: 50px;
+        height: 60%;
+        width: 450px;
+    }
+    .secondText h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+@media(max-width:1000px){
+    .beforeContain{
+        flex-wrap: wrap-reverse;
+    }
+    .imageDescription{
+        height: 30%;
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .imageDescription img{
+        height: 100%;
+        width: 100%;
+        font-size: 500px;
+    }
+    .textContain{
+        margin-top: 0px;
+        min-height: 200px;
+        width: 99%;
+        text-align: center;
+        padding: 0px 50px;
+
+    }
+    .boutonDescription .button{
+        height: 50px;
+        width: 140px;
+        margin-left: 15px;
+    }
+    .boutonDescription{
+        justify-content: center;
+    }
+}
+@media(max-width:725px){
+   
+    .secondText h1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width:570px){
+    .tete{
+        margin-bottom: 0%;
+    }
+    .secondText h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .textContain{
+        margin-top: 0px;
+        min-height: 200px;
+        width: 99%;
+        text-align: center;
+        padding: 0px 20px;
+
+    }
+    .boutonDescription{
+        flex-wrap: wrap;
+    }
+}
+
 
 /* -------------------------------------------------------------feature (deuxieme partie)----------------------------------------------------------- */
 
 .feature{
-    height: 450px;
+    width: 90%;
+    min-height: 370px;
+    margin: 0px auto 100px auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 /*  ------------------------------------------------------awasome-----------------------------------------------------------------*/
 .awasome{
     height: 80%;
-    width: 23%;
+    width: 290px;
     padding: 15px;
     text-align: justify;
 }
@@ -107,28 +193,24 @@
     font-size: 45px;
 }
 .awasome a{
-    height: 15%;
-    width: 60%;
+    height: 52px;
+    width: 160px;
     text-decoration: none;
     margin: 35px 0px 0px 0px;
     font-family: "Poppins", sans-serif;
     display: inline-block;
-    padding: 15px 20px 15px 49px;
+    padding: 15px 10px 15px 50px;
     border-radius: 50px;
     font-size: 14px;
     color: #fff;
 }
 
-/* --------------------------------------------------------------------feature list & feature items------------------------------------------ */
+/* --------------------------------------------------------------------feature items------------------------------------------ */
 
-.feature__list{
-    height: 80%;
-    width: 65%;
-    display: flex;
-    justify-content: space-around;
-}
+
 .feature__items{
-    width: 30%;
+    height: 350px;
+    width: 275px;
     margin: 10px;
     border: 1px solid #f0f4f6;
     text-align: center;
@@ -159,5 +241,78 @@
     display: inline-block;
     line-height: 70px;
     transition: 0.6s;
+}
 
+
+/* --------------------------------responsive for feature-------------------------- */
+
+@media(max-width:1200px){
+    .awasome{
+        height: 80%;
+        width: 350px;
+    }
+    .feature__items{
+        height: 350px;
+        width: 370px;
+    }
+}
+@media(max-width:900px){
+    .awasome{
+        height: 70%;
+        width: 340px;
+    }
+    .feature__items{
+        height: 330px;
+        width: 340px;
+    }
+    .awasome a{
+        height: 50px;
+        width: 140px;
+        padding-top: 15px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .awasome h1{
+        font-weight: 600;
+        line-height: 1;
+    }
+}
+@media(max-width:800px){
+    .awasome{
+        height: 65%;
+        width: 250px;
+    }
+    .feature__items{
+        height: 310px;
+        width: 250px;
+    }
+    .awasome a{
+        height: 45px;
+        width: 120px;
+        padding-top: 13px;
+    }
+    .awasome h1{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .awasome p{
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+@media(max-width:570px){
+    .awasome{
+        height: 65%;
+        width: 100%;
+    }
+    .feature__items{
+        height: 310px;
+        width: 100%;
+    }
+}
+@media(max-width:280px){
+    .feature__items{
+        padding: 40px 10px 20px;
+    }
 }
