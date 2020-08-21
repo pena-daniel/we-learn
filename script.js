@@ -139,3 +139,22 @@ new carouselle(
 );
 
 // counter
+let speed = 200;
+let counters = document.querySelectorAll('.counter');
+
+counters.forEach((counter) => {
+      const ajust = () => {
+          const target = Number(counter.getAttribute('data-target'));
+          let count  =  Number(counter.innerText);
+          const inc    = target/speed;
+
+          if (count < target) {
+            counter.innerText = count+inc;
+            setTimeout(ajust,1);
+          } else {
+            count.innerText = target;
+          }
+      }  
+
+      ajust();
+});
