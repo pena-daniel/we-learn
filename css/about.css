@@ -10,7 +10,7 @@
 header{
     height: 500px;
     position: relative;
-    background: url("/image/breadcrumb.png");
+    background: url("../image/breadcrumb.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -365,13 +365,13 @@ section{
 .profil{
     width: 100%;
     height: 300px;
-    background-image: url(/photos/photo_2020-07-26_09-58-57.jpg);
+    background-image: url(../photos/daniel.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .member2 .profil{
-    background-image: url(/photos/IMG_20200622_100216.jpg);
+    background-image: url(../photos/IMG_20200622_100216.jpg);
 }
 .Devdescription{
     text-align: justify;
@@ -450,16 +450,16 @@ section{
     line-height: 20px;
 }
 .realisation1 .profil{
-    background-image: url(/photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_19_29.png);
+    background-image: url(../photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_19_29.png);
 }
 .realisation2 .profil{
-    background-image: url(/photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_21_23.png);
+    background-image: url(../photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_21_23.png);
 }
 .realisation3 .profil{
-    background-image: url(/photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_22_14.png);
+    background-image: url(../photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_22_14.png);
 }
 .realisation4 .profil{
-    background-image: url(/photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_24_00.png);
+    background-image: url(../photos/Captures/Tourisme\ -\ Google\ Chrome\ 24_08_2020\ 12_24_00.png);
 }
 /* responsive for nos realisation */
 @media(max-width:950px){
