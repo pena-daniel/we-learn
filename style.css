@@ -47,6 +47,9 @@ a{
     color: #0c2e60;
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
 }
+.secondText h1{
+    font-size: 48px;
+}
 .firstText{
     font-size: 14px;
     text-transform: uppercase;
@@ -86,11 +89,16 @@ a{
 
 .VCourse,.getStart:hover{
     background-image: linear-gradient(to left, #ee390f 0%, #f9b700 0%, #ee390f 90%);
-    color: #ffffff !important;
     border: none !important;
     background-position: right center;
     cursor: pointer;
 }
+.VCourse a{color: #ffff !important;}
+.getStart a{
+    color: black !important;
+    transition: 0s;
+}
+.getStart:hover a{color: #ffffff !important;}
 /* --------------------------------------banniere responsive-------------------------------------------------------- */
 
 @media(max-width:1200px){
@@ -178,10 +186,10 @@ a{
 }
 
 
-/* -------------------------------------------------------------feature (deuxieme partie)----------------------------------------------------------- */
+/* -----------------------------------------------------feature (deuxieme partie)----------------------------------------------------------- */
 
 .feature{
-    width: 90%;
+    width: 95%;
     min-height: 370px;
     margin: 0px auto 100px auto;
     display: flex;
@@ -191,22 +199,22 @@ a{
 /*  ------------------------------------------------------awasome-----------------------------------------------------------------*/
 .awasome{
     height: 80%;
-    width: 290px;
+    width: 245px;
     padding: 15px;
     text-align: justify;
 }
 .awasome h1{
     margin-bottom: 17px;
-    font-size: 45px;
+    font-size: 35px;
 }
 .awasome a{
-    height: 52px;
-    width: 160px;
+    height: 45px;
+    width: 150px;
     text-decoration: none;
     margin: 35px 0px 0px 0px;
     font-family: "Poppins", sans-serif;
     display: inline-block;
-    padding: 15px 10px 15px 50px;
+    padding: 13px 7px 15px 50px;
     border-radius: 50px;
     font-size: 14px;
     color: #fff;
@@ -836,7 +844,6 @@ a{
     background-size: cover;
     box-sizing: content-box;
     border: solid rgba(156, 155, 155, 0.877) 1px;
-    filter: saturate(0);
     position: relative;
     margin: 10px;
     overflow: hidden;
@@ -887,9 +894,6 @@ a{
     color: #ce9130;
 }
 
-.descriptionSlide:hover{
-    filter: saturate(1);
-}
 .descriptionSlide:hover .someDescription{
     display: flex;
     top: 45%;
@@ -1019,28 +1023,23 @@ other__information
 .back__image{
     margin-left: auto;
     margin-right: auto;
-    width: 94% ;
-    height: 94%;
+    width: 100% ;
+    height: 100%;
     border-radius: 5px;
-    margin-top: 15px;
     background-image: url(image/special_cource_2.png);
     background-size: cover;
     background-position: center;
     position: relative;
-    filter: blur(0px);
-    transition: 1s;
-}
-.back__image:hover{
-    transform: scale(1.02);
-    filter: blur(1px);
 }
 
+
 .positionement{
-    width: 95% ;
-    height: 28%;
+    width: 100% ;
+    height: 27%;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.308);
     top: 70%;
-    left: 3%;
+    left: 0%;
     display: flex;
     justify-content: space-around;
     filter: blur(0px) !important;

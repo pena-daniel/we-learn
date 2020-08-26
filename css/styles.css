@@ -1,0 +1,517 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header,footer{
+    width: 100%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+/* ---------------------------------title first section -------------------------------------*/
+
+.titleCategories{
+    height: 20%;
+    width: 100%;
+    line-height: 120px;
+    padding-left: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.categoriesContainTitle{
+    font-size: 20px;
+    height: 20%;
+    width: 100%;
+    line-height: 80px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.part_title {
+    width: 100%;
+    line-height: 50px;
+}
+.switch{
+    height: 80%;
+    width: 100%;
+}
+.switch ul{
+    height: 65px;
+    line-height: inherit;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.switch ul li{
+    float: left;
+    list-style-type: none;
+    height: 100%;
+    width: 190px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.switch ul li:hover{
+    border-bottom: solid 3px;
+    cursor: pointer;
+}
+@media(max-width:400px){
+    .switch ul li{
+        width: auto;
+    }
+    .switch ul li:last-child{
+        margin-left: 20px;
+    }
+    .part_title h2{
+        font-size: 23px;
+    }
+}
+/* ---------------------premier carouselle------------------------------------------ */
+
+.imageSlide{
+    display: flex;
+    transition: transform 0.3s;
+}
+.categoriesContain .slider{
+    padding: 10px 20px 10px 0px;
+    border-top: solid 1px;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.scroll{
+    overflow: hidden;
+}
+.next,.prev{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 18px;
+    z-index: 1999;
+    background-color: #ffffff;
+}
+.next{
+    left: auto;
+    right: 40px;
+}
+.slider i{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 13%;
+    left: 13px;
+}
+.slider .fa-angle-left{
+    left: 10px;
+}
+.carouselle1 .items{
+    width: 18%;
+    height: 370px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.categoriesContain .coursImage{
+    width: 100%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    background-image: url(../image/backPresentations.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.categoriesContain .coursPresentation{
+    width: 100%;
+    height: 200px;
+    margin: 5px auto 0px auto;
+    box-sizing: border-box;
+}
+.categoriesContain .coursPresentation div{
+    margin-bottom: 5px;
+}
+.stars{
+    display: inline-block;
+    border: solid 1px;
+    width: .7rem;
+    height: .7rem;
+    margin-bottom: none;
+    background-color: rgb(236, 204, 20);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.first{
+    font-weight: bold;
+    color: rgb(131, 37, 37);
+}
+.second{
+    font-size: 13px;
+    padding-left: 8px;
+}
+.course__name{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+.course__prof{
+    font-size: 15px;
+    color: #73726c;
+}
+.coust{
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol' ;
+    color: #3c3b37;
+}
+.coust s{
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 8.5px;
+}
+
+/* second carouselle */
+
+.descriptionCourse .course__basic__info{
+    font-size: 20px;
+}
+.importantCourse{
+    height: auto;
+    line-height: 25px;
+    margin-bottom: 70px;
+}
+.descriptionCourse .course__name{
+    font-size: 27px;
+    line-height: 40px;
+}
+.importantCourse .titleCategories{
+    height: 10%;
+    line-height: 50px;
+    padding-left: 28px;
+}
+.sliders{
+    padding: 10px 20px 10px 0px;
+    width: 95%;
+    height: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 4px;
+    
+}
+
+.item{
+    width: 800px;
+    height: 350px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: solid 1px grey;
+    border-radius: 3px;
+}
+.imageforcourse{
+    background-image: url(../image/backPresentations.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38%;
+    height: 80%;
+    border-radius: 4px;
+    margin: 3% 1% 0px 4%;
+    
+}
+.descriptionCourse{
+    padding: 10px;
+    width: 42%;
+    height: auto;
+    margin-top: 3%;
+}
+.sliders .next{
+    top: 43%;
+    right: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+.sliders .prev{
+    top: 47%;
+    left: -10px;
+    box-shadow: 1px 1px 5px black;
+}
+.sliders i{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 13%;
+    left: 13px;
+}
+.sliders .fa-angle-left{
+    left: 10px;
+}
+.imageSlide1{
+    transition: transform 1s;
+}
+/* responsive for popular course */
+@media(max-width:680px){
+    
+    .descriptionCourse{
+        width: 50%;
+    }
+    .descriptionCourse .course__basic__info{
+        font-size: 17px;
+    }
+    .descriptionCourse .course__name{
+        font-size: 23px;
+        line-height: 40px;
+    }  
+}
+@media(max-width:590px){
+    .item{
+        width: 800px;
+        height: 400px;
+        margin-top: 0px;
+        justify-content: center;   
+    }
+    .imageforcourse{ 
+        width: 90%;
+        height: 30%;
+        border-radius: 4px;
+        margin: 3% 1% 0px 4%; 
+    }
+    .descriptionCourse{
+        width: 100%;
+    }
+}
+
+@media(max-width:320px){
+    .descriptionCourse .course__name{font-size: 18px;}
+    .descriptionCourse .course__basic__info{font-size: 14px;}
+    .descriptionCourse .course__prof{
+        font-size: 16px;
+    }
+    .descriptionCourse .coust{font-size: 14px;}
+}
+
+/* -----------------------------------------------subject----------------------------------------------------------- */
+.subject{
+    height: 60%;
+    margin-bottom: 80px;
+}
+ .subject .titleCategories{
+    height: 10%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 40px;
+}
+.carouselle3{
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subjectContain{
+    position: relative;
+}
+.subjectContain .next,.subjectContain .prev{
+    box-shadow: 1px 1px 5px black;
+    top: 35%;
+}
+.subjectContain i{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 14%;
+    right: -9px;
+}
+.subjectContain .next i{
+    top: 17%;
+    left: 15px;
+}
+.subject__items{
+    width: 20%;
+    height: 140px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.subject__items div{
+    border: solid 1px #dcdacb;
+    color: #0f7c90;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    line-height: 55px;
+    border-radius: 4px;
+}
+.subject__items div:hover{
+    color: #064853;
+}
+
+/* -----------------------------------------------------meilleur prof---------------------------------------------------- */
+.formateur{
+    width: 28%;
+    height: auto;
+    border: solid 1px #dcdacb;
+    border-radius: 4px;
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.listprof{
+    width: 98%;
+    margin: 0px auto 25px auto;
+    position: relative;
+}
+.listprof i{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 15%;
+    left: 16px;
+}
+.listprof .next{
+    top: 40%;
+    right: -8px;
+    box-shadow: 1px 1px 5px black;
+}
+.listprof .prev i{
+    left: 9px;
+}
+.listprof .prev{
+    top: 45%;
+    left: -10px;
+    box-shadow: 1px 1px 5px black;
+}
+.formateur > div{
+    margin: 20px 10px 0px 10px;
+}
+.description_formateur > div{
+    margin-bottom: 5px;
+}
+.profil_formateur{
+    background-image: url(../image/backPresentations.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 90px;
+    border-radius: 50%;
+}
+.description_formateur{
+    height: 90%;
+    box-sizing: border-box;
+}
+.prof_name{
+    font-size: 1.1em;
+    color: #0f7c90;
+    font-weight: bold;
+}
+.prof_domaine{
+    font-weight: 700;
+    line-height: 1;
+    font-size: 1rem;
+}
+.prof_note span:first-child{
+    color: #7c4012;
+    font-weight: bold;
+}
+.prof_note span:last-child{
+    font-size: 12px;
+    color: #be5a0e;
+}
+.prof_participant ,.nbr_of_cours{
+    font-size: 14px;
+}
+
+.nosProf .titleCategories{
+    height: 15%;
+    line-height: 90px;
+    padding-left: 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.garantie,.filtercontrole{
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.garantie{
+    height: auto;
+    border: solid 1px #73726c;
+    border-radius: 5px;
+    background-color: #eeedea;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.garantie span{
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.garantie span:first-child{
+    border: solid 1px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(70, 4, 70);
+    margin-left: 20px;
+    margin-top: 12px;
+    position: relative;
+    
+}
+.garantie span:last-child{
+    height: 50%;
+    width: 85%;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.garantie span:first-child i{
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    color: #ffffff;
+}
+.name{
+    color: #0f7c90;
+}
+.name span{
+    padding:14px 10px 14px 10px;
+    color: #108ca1;
+    font-weight: bold;
+}
+.name :hover{
+    color: #073842; 
+}
+
+
+/* reponsive */
+
+@media(max-width:715px){
+ .titleCategories{
+    font-size: 30px;
+}
+}
+@media(max-width:595px){
+.titleCategories{
+        font-size: 25px;
+        line-height: 60px;
+    }
+}
+@media(max-width:500px){
+.titleCategories{
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+/* footer */
+.footer-bottom{
+    margin-top: 0px;
+}

@@ -11,12 +11,9 @@
     justify-content: space-between;
     position: relative;
 }
-.navbar-bar .contain{
+#nav-bar .containss{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    position: fixed;
 }
 
 .navbar-brand b{
@@ -61,12 +58,7 @@
     transition: ease-in-out 700ms;
 }
 
-/*form input{
-    outline: none;
-    width: 350px;
-    background: linear-gradient(to left, #ee390f 0%, #f9b700 0%, #ee390f 90%);
-    color: #fff;
-}*/
+
 header form input:focus,
 header form input:active,
 header form input:hover{

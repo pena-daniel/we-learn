@@ -9,14 +9,8 @@ footer h3{
     color: #fff;
 }
 
-footer{
-    min-height: 700px;
-    background: url(image/footer-bg.png) no-repeat bottom;
-    background-size: cover;
-    box-sizing: border-box;
-}
 .footer-top{
-    padding-top: 360px ;
+    padding-top: 80px ;
 }
 .footer-top .segment-un{
     color: #fff;
@@ -56,6 +50,10 @@ footer i:hover{
     color: #fff;
     transition: ease 1s;
 }
+footer form input[type="submit"],footer form input[type="email"]{
+    height: 30px;
+    width: 200px;
+}
 footer form input[type="submit"]{
     background: linear-gradient(to left, #ee390f 0%, #f9b700 0%, #ee390f 90%);
     border: none;
@@ -63,9 +61,11 @@ footer form input[type="submit"]{
     margin-left: -5px;
     color: #fff;
     transform: uppercase;
+    height: 29px;
+    width: 100px;
 }
 .footer-bottom{
-    background: linear-gradient(to left, #ee390f 0%, #f9b700 0%, #ee390f 90%);
+    background: rgb(24, 23, 23);
     line-height: 50px;
     text-align: center;
     color: #fff;
@@ -93,15 +93,13 @@ form input
     outline: none;
     max-width: 700px;
 }
-
+footer{
+    min-height: 100px;
+    background-color: #222222;
+    border: solid 1px;
+    box-sizing: border-box;
+}
 @media (max-width: 1200px){
-    footer{
-        min-height: 100px;
-        background: none;
-        background-color: #222222;
-        border: solid 1px;
-        box-sizing: border-box;
-    }
     .footer-top{
         padding-top: 60px ;
     }
