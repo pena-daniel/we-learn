@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+/* container */
+.container{
+    height: auto;
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+/* left side */
+.leftSide{
+    width: 85%;
+}
+.courseImage{
+    height: 350px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    
+}
+.courseImage img{
+width: 100%;
+max-height: 100%;
+}
+.items{
+    margin-left: 3%;
+    margin-right: 3%;
+    border-top: 1px solid #edeff2;
+}
+.objectif{
+    border-top: none;
+}
+.items h1{
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0c2e60;
+}
+.items p{
+    font-size: 14px;
+    color: #888888;
+    line-height: 1.929;
+}
+
+/* time line */
+.TimeLine h1 , .prerequis h1{
+    margin-top: 20px;
+}
+.objectif > p:last-child , .prerequis > p:last-child{
+    margin-bottom: 35px;
+}
+.TimeLine a{
+    padding: 7px 15px;
+    font-size: 14px;
+    text-transform: capitalize !important;
+    border: 1px solid #edeff2;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all .4s ease-in-out;
+    background-size: 200% auto;
+    font-weight: 500;
+    color: #0c2e60;
+}
+.TimeLine a:hover{
+    color: #fff !important;
+    background-position: right center;
+    background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+}
+
+.TimeLine ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+    color: #888888;
+    line-height: 1.929;
+    font-weight: 400;
+    border: solid 1px;
+}

@@ -40,11 +40,10 @@
     width: 30%;
     height: auto;
     margin: auto;
-}
-.container .row .card:hover{
     transition: .3s ease-in-out all;
-    box-shadow: 2px 0px 2px 2px #000;
+    box-shadow: 1px 1px 5px rgba(180, 179, 179, 0.431);
 }
+
 .container .row  .card-body .btn{
     background: rgb(245, 74, 12);
     border: none;

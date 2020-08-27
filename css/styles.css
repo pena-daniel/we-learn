@@ -209,10 +209,13 @@ header,footer{
     width: 800px;
     height: 350px;
     margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    border: solid 1px grey;
+    box-shadow: 3px 3px 10px rgba(163, 161, 161, 0.527),
+                -1px -1px 5px rgba(163, 161, 161, 0.527);
     border-radius: 3px;
 }
 .imageforcourse{
@@ -253,6 +256,7 @@ header,footer{
     left: 10px;
 }
 .imageSlide1{
+    height: 390px;
     transition: transform 1s;
 }
 /* responsive for popular course */
@@ -356,11 +360,13 @@ header,footer{
 .formateur{
     width: 28%;
     height: auto;
-    border: solid 1px #dcdacb;
+    box-shadow: 2px 2px 6px rgba(146, 143, 143, 0.527),
+                -1px -1px 4px rgba(146, 143, 143, 0.527);
     border-radius: 4px;
     display: flex;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 .listprof{
     width: 98%;

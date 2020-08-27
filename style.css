@@ -248,16 +248,22 @@ a{
 }
 .fav_description{
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     background-color: #f0f4f6;
+    border: 1px solid #f0f4f6;
     display: inline-block;
     line-height: 70px;
-    transition: 0.6s;
+    transition: 0.3s ease-in-out;
 }
-
+.member_inner_text:hover .fav_description{
+    background-image: linear-gradient(to left, #ee390f 0%, #f9b700 0%, #ee390f 90%);
+    color: #ffffff !important;
+}
 
 /* --------------------------------responsive for feature-------------------------- */
 
@@ -370,7 +376,9 @@ a{
 }
 .logo_text_desc{
     line-height: 180px;
-    border: solid 1px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .logo_text_desc p{
     text-align: center;
@@ -418,12 +426,19 @@ a{
     text-align: left;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+    border: 1px solid #f0f4f6;
+    transition: .3s ease-in-out;
 }
+.member_inner_text:hover{
+    border-color: #fd7e14;
+}
+
 .member_inner_text h4{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 17px;
     line-height: 1.2em;
+    text-align: center;
     color: #0c2e60;
     font-family: "Poppins", sans-serif;
 }
@@ -433,6 +448,11 @@ a{
     font-family: "Roboto", sans-serif;
     color: #888888;
     font-size: 14px;
+    text-align: center;
+    transition: .6s ease-in-out;
+}
+.member_inner_text:hover .logo_text_desc p{
+    color: #ffffff;
 }
 /* -----------------------------------------------------responsive for advance feature----------------------------------------- */
 
@@ -1035,14 +1055,15 @@ other__information
 
 .positionement{
     width: 100% ;
-    height: 27%;
+    height: 30%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.308);
     top: 70%;
     left: 0%;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-around;
-    filter: blur(0px) !important;
+    padding-top: 20px;
+    justify-content: center;
 
 }
 .date{
@@ -1054,7 +1075,7 @@ other__information
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 .date h1{
     width: 100%;
@@ -1099,9 +1120,8 @@ other__information
     width: 100%;
     height: 30%;
     border-radius: 10px;
-    background-color: #ffffff;
     display: flex;
-    transition: .6s ease;
+    transition: .1s ease;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.616);
 }
 .futur:hover{
