@@ -19,11 +19,9 @@
     width: 85%;
 }
 .courseImage{
-    height: 350px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     
 }
 .courseImage img{
@@ -58,9 +56,9 @@ max-height: 100%;
 .objectif > p:last-child , .prerequis > p:last-child{
     margin-bottom: 35px;
 }
-.TimeLine a{
-    padding: 7px 15px;
-    font-size: 14px;
+.TimeLine a,.send a,.moduleContent a{
+    padding: 5px 13px;
+    font-size: 13px;
     text-transform: capitalize !important;
     border: 1px solid #edeff2;
     outline: none;
@@ -72,7 +70,7 @@ max-height: 100%;
     font-weight: 500;
     color: #0c2e60;
 }
-.TimeLine a:hover{
+.TimeLine a:hover,.Add:hover,.send a:hover{
     color: #fff !important;
     background-position: right center;
     background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
@@ -82,13 +80,411 @@ max-height: 100%;
     list-style: none;
 }
 li{
-    list-style: none;
-    margin-bottom: 20px;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: space-between!important;
     color: #888888;
     line-height: 1.929;
     font-weight: 400;
-    border: solid 1px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.TimeLine li,.detailCourse li a,.moduleContent li{
+    align-items: center!important;
+    justify-content: space-between!important;
+    display: flex!important;
+}
+/* partie droite du container*/
+
+.rigthSide{
+    height: auto;
+}
+.detailCourse{
+    height: 365px;
+    width: 88%;
+    padding: 30px;
+    border: solid 1px #edeff2;
+}
+
+.detailCourse li{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.detailCourse li a{
+    padding-top: 10px;
+    text-decoration: none;
+    color: #888888;
+    border-top: solid 1px #edeff2;
+    font-size: 13.5px;
+}
+.detailCourse li:first-child a{
+    border-top: none;
+}
+.Add{
+    display: block;
+    margin-top: 22px;
+    background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+    color: #fff !important;
+    background-size: 200% auto;
+    border: none;
+    text-transform: capitalize !important;
+    outline: none;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    font-weight: 500;
+    padding: 13.5px 45px;
+    text-align: center;
+    text-decoration: none;
+}
+/* impression */
+.review-top{
+    padding: 30px;
+    width: 88%;
+    padding: 30px 0px;
+    border-top: solid 1px #edeff2;
+    margin-top: 50px;
+}
+.review-top h6,.feedBack h1{
+    color: #ee3f0e;
+    font-size: 15px;
+    margin-bottom: 21px;
+    margin-top: 7px;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+.reviews{
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: space-between!important;
+    margin-bottom: 10px;
+}
+.reviews span{
+    width: 31%;
+    color: #888888;
+    font-size: 15px;
+}
+.etoiles a,.rating a{
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    background-color: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.reviews1 .etoiles a:last-child{
+    background-color: gray;
+}
+.reviews2 .etoiles a:last-child,.reviews2 .etoiles a:nth-child(4){
+    background-color: gray;
+}
+/* feedback */
+.feedBack h1{
+    color: #0c2e60;
+}
+.UserFeedback{
+    resize: none;
+    height: 140px;
+    border: 1px solid #edeff2 ;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 13px;
+    color: #888888;
+}
+.UserFeedback:focus{
+    outline: #edeff2;
+}
+.send{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.send a{
+    background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+    outline: none;
+    padding: 8px 28px;
+    color: #ffffff;
+}
+
+/* commentaires */
+.commentaires{
+    margin-top: 50px;
+}
+.comment{
+    padding-bottom: 48px;
+}
+.singleComent{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    width: 77%;
+}
+.desc h5{
+    color: #0c2e60;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+.desc h5 a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.TextComment{
+    margin-bottom: 10px;
+    color: #777777;
+    line-height: 1.929;
+    font-size: 12px !important;
+}
+.desc div{
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+/* module */
+.module{
+   width: 650px;
+}
+.moduleTitle,.inner{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+    
+}
+.moduleTitle{
+    background-color: #fbfbf8;
+    border-bottom: 1px solid #dcdacb;
+    color: #3c3b37;
+    cursor: pointer;
+    text-align: center;
+    height: auto;
+}
+.titleModuleContent{
+    font-weight: 700;
+    height: auto;
+    width: 77%;
+    padding-top: 10px;
+    text-align: left;
+}
+.time{
+    width: 22%;
+    height: auto;
+    font-size: 14px;
+    padding-top: 20px;
+}
+.inner{
+    width: 93%;
+}
+.module2 .titleModuleContent{
+    padding-top: 20px;
+}
+.module3 .titleModuleContent{
+    padding-top: 20px;
+}
+.chevron{
+    position: relative;
+}
+.fa-chevron-down,.fa-chevron-up{
+    font-size: 12px;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-47%);
+    left: 18px;
+}
+.fas{
+    font-size: 13px;
+    padding-right: 10px;
+}
+.moduleContent{
+    height: 0px;
+    background-color: rgb(226, 219, 219);
+    transition: ease .3s;
+    overflow: hidden;
+}
+.moduleContent a{
+    border: none;
+}
+.moduleContent ul{
+    padding: 15px 15px 10px 15px;
+}
+.moduleContent li{
+    margin-bottom: 10px;
+}
+.moduleContent li p{color: #0c2e60;}
+/* responsive for module course */
+ @media(max-width:800px){
+    .titleModuleContent{
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .time{
+        width: 24%;
+    }
+    .module1 .titleModuleContent{
+        padding-top: 18px;
+    }
+    .module{
+        width: 580px;
+     }
+} 
+@media(max-width:500px){
+    .titleModuleContent{
+        font-weight: 700;
+        font-size: 17px;
+        width: 100%;
+    }
+    .inner{
+        height: 90px;
+    }
+    .time{
+        display: none;
+    }
+    .module1 .titleModuleContent{
+        padding-top: 37px;
+    }
+    .module2 .titleModuleContent{
+        padding-top: 37px;
+    }
+    .module3 .titleModuleContent{
+        padding-top: 37px;
+    }
+    .module{
+        width: 580px;
+     }
+     .fa-chevron-down,.fa-chevron-up{
+        top: 55%;
+        transform: translateY(-55%);
+    }
+} 
+@media(max-width:300px){
+    .module1 .titleModuleContent{
+        padding-top: 27px;
+    }
+    .module2 .titleModuleContent{
+        padding-top: 27px;
+    }
+    .module3 .titleModuleContent{
+        padding-top: 27px;
+    }
+     
+    .titleModuleContent{
+        font-size: 22px;
+    }
+    .fa-play-circle{
+        font-size: 20px;
+    }
+    .moduleContent a{
+        font-size: 20px;
+    }
+}
+/* responsive for all {module course} */
+@media(max-width:990px){
+    .container{
+        height: auto;
+        width: 650px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .leftSide{
+        width: 90%;
+    }
+    .rightSide{
+        margin-top: 50px;
+        width: 90%;
+    }
+    .rightSide > div{
+        width: 100%;
+    }
+    .review-top{
+        width: 100%;
+    }
+}
+@media(max-width:490px){
+    .items p{
+        font-size: 17px;
+    }
+    .TimeLine ul li p{
+        font-size: 18px;
+    }
+    .TimeLine a,.send a{
+        padding: 7px 15px;
+        font-size: 16.5px;
+        border: 1px solid #d8dde4;
+    }
+    .detailCourse li a{
+        font-size: 16px;
+    }
+    .review-top h6,.feedBack h1{
+        font-size: 19px;
+    }
+    .reviews span{
+        font-size: 17px;
+    }
+    .send{
+        margin-top: 25px;
+    }
+    .send a{
+        padding: 9px 30px;
+    }
+    .desc h5 a{
+        font-size: 22px;
+    }
+    .TextComment{
+        margin-bottom: 10px;
+        font-size: 18px !important;
+    }
+    .singleComent{
+        justify-content: center;
+    }
+    .desc{margin-left: 40px;}
+    .etoiles a,.rating a{
+        height: 17px;
+        width: 17px;
+    }
+    .desc div{
+        margin-top: 10px;
+    }
+    .UserFeedback{
+        font-size: 15px;
+    }
+}
+@media(max-width:350px){
+    .UserFeedback{
+        font-size: 18px;
+    }
+    .items p{
+        font-size: 25px;
+        text-align: justify;
+    }
+    .TimeLine ul li p{
+        font-size: 23px;
+    }
+    .TimeLine a,.send a{
+        padding: 8px 18px;
+        font-size: 17.5px;
+        border: 1px solid #d8dde4;
+    }
+    .detailCourse li a{
+        font-size: 20px;
+    }
+    .Add{font-size: 20px;}
+    .review-top h6,.feedBack h1{
+        font-size: 25px;
+    }
+    .reviews span{
+        font-size: 23px;
+    }
+    .send{
+        margin-top: 25px;
+    }
+    .send a{
+        padding: 15px 40px;
+    }
+    .desc h5 a{
+        font-size: 25px;
+    }
+    .TextComment{
+        margin-bottom: 10px;
+        font-size: 21px !important;
+    }
+    .etoiles a,.rating a{
+        height: 22px;
+        width: 22px;
+    }
 }
