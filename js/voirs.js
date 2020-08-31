@@ -24,11 +24,15 @@ optionSubmenu.addEventListener('click',(e)=>{
 let change = 0;
 let menuSelect =document.querySelector(".menu_content");
 let titleMenu = document.querySelector(".selectMenu");
+var paramsParent= "sousMenu";
 
 function SetHeight(params) {
-    let value = document.querySelector("."+params);
-    let chevron = document.querySelector("."+params+" .fa-chevron-down");
-    let contain = document.querySelector("."+params+" .contenu");
+    if (window.innerWidth <= 990) {
+        paramsParent = "responsiveCourse";
+    }
+    let value = document.querySelector("."+paramsParent+" ."+params);
+    let chevron = document.querySelector("."+paramsParent+" ."+params+" .fa-chevron-down");
+    let contain = document.querySelector("."+paramsParent+" ."+params+" .contenu");
     value.addEventListener("click",(e)=>{
         if (chevron.classList[1] == "fa-chevron-down") {
             chevron.classList.value = "fas fa-chevron-up";
@@ -57,7 +61,7 @@ cross.addEventListener("click",(e)=>{
         menuSelect.classList.add("btn-reponsive");
         cross.style.color ='rgb(22, 22, 22)';
         titleMenu.innerHTML = '<p><p><i class="fas fa-long-arrow-alt-left"></i></p>Contenu du cours</p>';
-        document.querySelector(".right_content").style.width = "0%";
+        document.querySelector(".sousMenu").style.width = "0%";
         document.querySelector(".left_content").style.width = "100%";
         
         change = 1;
@@ -72,7 +76,7 @@ menuSelect.addEventListener("click",(e)=>{
         menuSelect.classList.remove("btn-reponsive");
         titleMenu.innerHTML = '<p>Contenu du cours</p>';
         cross.style.color ='#fffff';
-        document.querySelector(".right_content").style.width = "25%";
+        document.querySelector(".sousMenu").style.width = "25%";
         document.querySelector(".left_content").style.width = "80%";
         document.querySelector(".vid_content").style.height = "auto";
         change = 0;
