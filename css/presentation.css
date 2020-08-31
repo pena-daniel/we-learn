@@ -17,6 +17,7 @@
 /* left side */
 .leftSide{
     width: 85%;
+    margin-right: 50px;
 }
 .courseImage{
     width: 95%;
