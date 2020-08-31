@@ -3,11 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" defer></script>
     <link rel="stylesheet" href="css/formateur.css">
     <script src="js/formateur.js" defer></script>
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="sideMenu">
+            <ul>
+                <li class="test">W</li>
+                <li class="active"><i class="fas fa-tv"></i> cours</li>
+                <li><i class="fas fa-comment-alt"></i>Communication</li>
+                <li><i class="far fa-chart-bar"></i>Performances</li>
+                <li><i class="fas fa-wrench"></i>Outils</li>
+                <li><i class="far fa-question-circle"></i>Ressources</li>
+            </ul>
+        </div>
+        <div class="dashContain">
+            <div class="navBar">
+                <div class="contenue">
+                    <div class="UserType"><p>formateur</p></div>
+                   <div class="notification"> <i class="fas fa-bell"></i></div>
+                   <div class="UserProfil"></div>
+                </div>
+            </div>
+            <h1>Profil et paramètre</h1>
+            <ul class="menu">
+                <li class="item itemAcitive">Profil We-learn</li>
+                <li class="item">Photo de profil</li>
+                <li class="item">Paramètre de confidentialité</li>
+            </ul>
+            <div class="menu_contain">
+                <div class="UserInfo">
+                    <form action="" method="post">
+                        <div class="formItem surname">
+                            <label for="prenom">prenom</label>
+                            <input type="text" name="prenom" id="prenom"/>
+                        </div>
+                        <div class="formItem famiName">
+                            <label for="familyName">Nom de famille</label>
+                            <input type="text" name="familyName" id="familyName"/>
+                        </div>
+                        <div class="formItem bigTitle">
+                            <label for="GrosTitre">Gros titre</label>
+                            <input type="text" name="GrosTitre" id="GrosTitre"/>
+                        </div>
+                        <div class="formItem biographie">
+                            <label for="Biographie">Biographie</label>
+                            <div class="text-area" contenteditable="true">
+                                <p>
+                                    Je m'appelle Fosso Stive Je suis un jeune développeur web.
+                                    Après ma formation je me suis lancé en entreprise et je n'étais vraiment pas épanoui.
+                                    J'ai donc décider de changer de routine et de devenir Formateur Udemy.pour le moment 
+                                    j'ai une seule formation Créez votre site web avec HTML5 et CSS3 ,mais je compte faire 
+                                    d'autres formation sur php,sql,python...
+                                </p>
+                                <p>
+                                    Tous les jours je réfléchis sur des stratégies et je réponds aux 
+                                    questions de mes participants pour devenir un jour le meilleur 
+                                    formateur udemy dans ma catégorie.
+                                </p>
+                                <p>
+                                    pour me soutenir acheter ma formation (:
+                                </p>
+                            </div>
+                            <p>
+                                Votre biographie doit contenir au moins 50 caractères. 
+                                Les liens et les codes de coupon ne sont pas autorisés.
+                            </p>
+                        </div>
+                        <div class="formItem langue">
+                            <label for="langue">Langue</label>
+                            <input type="text" name="langue" id="langue"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="userSocialInfo">
+                    <form action="" method="post">
+                        <div class="formItem site">
+                            <label for="site">Site Web</label>
+                            <input type="text" name="site" id="site" placeholder="URL"/>
+                        </div>
+                        <div class="formItem Twitter">
+                            <label for="Twitter">Twitter</label>
+                            <div class="class">
+                                <label for="title">http://www.twitter.com/</label>
+                                <input type="text" name="Twitter" id="Twitter" placeholder="Nom d'utilisateur"/>
+                            </div>
+                        </div>
+                        <div class="formItem Facebook">
+                            <label for="Facebook">Facebook</label>
+                            <div class="class"> 
+                                <label for="title">http://www.Facebook.com/</label>
+                                <input type="text" name="Facebook" id="Facebook" placeholder="Nom d'utilisateur"/>
+                            </div>
+                        </div>
+                        <div class="formItem LinkedIn">
+                            <label for="LinkedIn"> Réseaux LinkedIn</label>
+                           <div class="class">
+                            <label for="title">http://www.LinkedIn.com/</label>
+                            <input type="text" name="LinkedIn" id="LinkedIn" placeholder="Nom d'utilisateur"/>
+                           </div>
+                        </div>
+                        <div class="formItem YouTube">
+                            <label for="YouTube">YouTube</label>
+                            <div class="class">
+                                <label for="title">http://www.LinkYouTubeedIn.com/</label>
+                                <input type="text" name="YouTube" id="YouTube" placeholder="Nom d'utilisateur"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="enregistrer">
+                <div class="btn btn-save">sauvegarder</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
